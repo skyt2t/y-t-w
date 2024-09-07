@@ -1,0 +1,141 @@
+/* General Styles */
+.weather-report-page-main-container {
+  min-height: 92vh;
+  padding: 30px;
+  background: linear-gradient(to bottom, #e1dddd, #bfe0e9, #7ac6da, #1d77b7);
+  background-size: cover;
+  background-attachment: fixed; /* Parallax effect */
+  color: #fff; /* Set default text color */
+  font-family: 'Roboto', sans-serif; /* Consistent font across the page */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 567px) {
+  .weather-report-page-main-container {
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
+}
+
+.card-main-container-for-wind {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+  justify-content: center;
+}
+
+.weather-text {
+  font-size: 2.5rem; /* Increased font size for better readability */
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Reduced text shadow for subtle effect */
+  padding: 10px 15px; /* Reduced padding */
+  background: rgba(0, 0, 0, 0.4); /* Lighter background for less contrast */
+  border-radius: 12px; /* Rounded corners */
+  display: inline-block; /* Fit text size */
+}
+
+@media screen and (max-width: 567px) {
+  .card-main-container-for-wind {
+    flex-direction: column;
+  }
+}
+
+.widn-data-container {
+  padding: 15px; /* Reduced padding */
+  background-image: url('https://www.breeze-technologies.de/wp-content/uploads/2019/06/holger-link-748973-unsplash-1030x687.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 500px; /* Max width for better fit on larger screens */
+  border-radius: 15px; /* Rounded corners */
+  margin: 15px 0;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow for more depth */
+}
+
+@media screen and (max-width: 567px) {
+  .widn-data-container {
+    width: 100%; /* Full width on small screens */
+  }
+}
+
+.air-auality-para-text {
+  font-size: 1.2rem; /* Slightly larger font size */
+  color: #fff;
+  margin-bottom: 10px; /* Reduced margin */
+  background: rgba(0, 0, 0, 0.6); /* Darker background */
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px 10px; /* Reduced padding */
+}
+
+.air-data-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px; /* Max width for better fit */
+  margin: auto;
+}
+
+.air-qualiti-data-para-text {
+  font-size: 1.4rem; /* Larger font size */
+  color: #fff;
+  font-weight: bold;
+}
+
+.temperature-container {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4c7t_dZZd_OlULU37WQd9xqlcpR85p6FsIQ&s');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 15px; /* Reduced padding */
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+  max-width: 500px; /* Max width for better fit */
+}
+
+.sunrise-container {
+  background-image: url('https://miro.medium.com/v2/resize:fit:720/format:webp/1*gW1cMPDfqsUgfXy5uUXFzA.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 15px; /* Reduced padding */
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+  max-width: 500px; /* Max width for better fit */
+  animation: move 20s linear infinite; /* Smooth animation */
+}
+
+.clouds-container {
+  background-image: url('https://www.shutterstock.com/image-photo/air-monitoring-station-instruments-analyze-600nw-2367224379.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 15px; /* Reduced padding */
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+  max-width: 500px; /* Max width for better fit */
+  animation: move 20s linear infinite; /* Smooth animation */
+}
+
+@keyframes move {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.feels-like-container {
+  width: 100%;
+  height: 25vh;
+  padding: 15px; /* Reduced padding */
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly more opaque */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+}

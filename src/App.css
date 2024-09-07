@@ -1,0 +1,63 @@
+.App {
+  height: 92vh;
+  padding: 30px;
+  background-image: linear-gradient(to top, #f5ac6c, #f7f5a6);
+  background-size: cover; /* Ensure background covers entire area */
+  overflow-y: auto; /* Allow scrolling if content exceeds view height */
+  display: flex;
+  flex-direction: column; /* Ensure vertical alignment */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 20px; /* Reduced padding on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 10px; /* Further reduced padding on very small screens */
+  }
+}
+
+.my-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #0f0f0f;
+  border-radius: 8px; /* More pronounced rounding */
+  overflow: hidden; /* Hide any overflow content */
+}
+
+.my-table th,
+.my-table td {
+  border: 1px solid #0f0f0f;
+  padding: 12px; /* Increased padding for readability */
+  text-align: left;
+}
+
+.my-table th {
+  background-color: #ffffff;
+  font-weight: bold; /* Improved readability */
+}
+
+.error-msg {
+  font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+  font-size: 1rem; /* Responsive font size */
+  color: #f63711;
+  margin: 10px 0; /* Margin for spacing around error messages */
+  text-align: center; /* Center text alignment */
+}
+
+/* Responsive table adjustments */
+@media screen and (max-width: 768px) {
+  .my-table th, .my-table td {
+    padding: 10px; /* Adjusted padding for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .my-table th, .my-table td {
+    padding: 8px; /* Further reduced padding for very small screens */
+  }
+}
